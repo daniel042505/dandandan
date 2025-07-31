@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/*body{
+    background-color: midnightblue;
+}*/
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 2s;
+}
+
+.navbar a:hover,
+.navbar a.home{
+    color: deepskyblue;
+}
+
+.desc{
+    height: 100vh;
+    display: flex;
+    background: url('paparon.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.description{
+    max-width: 500px;
+}
+
+.description h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.description p{
+    font-size: 20px;
+    margin: 20px 0 40px;
+    color: skyblue;
+
+}
+
+.desc .box{
+    display: flex;
+    width: 345px;
+    height: 50px;
+
+}
+ 
+
+.hom{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hom a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid deepskyblue;
+    border-radius: 50%;
+    font-size: 30px;
+    color:deepskyblue;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hom a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: white;  
+    transition: .5s;
+    z-index: -1;
+}
+
+.hom a:hover::before{
+    width: 100%;
+}
