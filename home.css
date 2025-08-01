@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 
 }
 
 
 
 .header{
+    font-family: 'Franklin Gothic Medium';
     position: fixed;
     top: 0;
     left: 0;
@@ -22,6 +23,7 @@
 }
 
 .navbar a {
+     font-family: 'Franklin Gothic Medium';
     font-size: 18px;
     color: white;
     text-decoration: none;
@@ -30,8 +32,8 @@
     transition: 2s;
 }
 
-.navbar a:hover,
-.navbar a.home{
+.navbar a:hover
+{
     color: deepskyblue;
 }
 
@@ -50,26 +52,11 @@
 }
 
 .description h1{
+     font-family: 'Franklin Gothic Medium';
     font-size: 50px;
     font-weight: 700;
     color: white;
 }
-
-
-.description p{
-    font-size: 20px;
-    margin: 20px 0 40px;
-    color: skyblue;
-
-}
-
-.desc .box{
-    display: flex;
-    width: 345px;
-    height: 50px;
-
-}
- 
 
 .hom{
     position: absolute;
